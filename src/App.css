@@ -312,7 +312,7 @@ button {
 .eyebrow {
   margin: 0 0 25px;
   color: var(--orange);
-  font: 10px 'DM Mono';
+  font: 15px 'DM Mono';
   letter-spacing: .12em;
 }
 
@@ -1115,6 +1115,7 @@ h2 em {
   position: relative;
   overflow: hidden;
   color: #0a1128;
+  background: linear-gradient(135deg, #f7fbff 0%, #eef6ff 50%, #e8f3ff 100%);
 }
 
 .footer::before {
@@ -1124,8 +1125,7 @@ h2 em {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('/footer.png') center/cover no-repeat;
-  filter: blur(2px);
+  background: none;
   z-index: -1;
 }
 

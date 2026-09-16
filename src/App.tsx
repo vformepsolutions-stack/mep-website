@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import { icons } from 'lucide-react'
 
 const phone = '917852046206'
 const mapEmbed = 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3557.607796458594!2d75.79169297543956!3d26.915939676645294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1788332700570!5m2!1sen!2sin'
@@ -17,6 +18,7 @@ const services = [
   { number: '03', title: 'Fire Protection', text: 'Integrated detection, firefighting and suppression systems designed around your facility.', icon: '✧', img: "/services/fire preventation.jpg" },
   { number: '04', title: 'Electrical Works', text: 'Safe, precise HV and LV power distribution, controls and electrical installation.', icon: '⌁', img: "/services/Electric Works.jpg" },
   { number: '05', title: 'Service & Maintenance', text: 'Planned maintenance and responsive support that keeps every system performing.', icon: '↻', img: "/services/service and maintance.jpg" },
+  {number:"06", title : "Solar installation and maintenance",text:'Reliable solar installation and expert maintenance for efficient, long-lasting clean energy.',icon:"",img:"/services/solar.jpg"}
 ]
 
 const projects = [
@@ -101,7 +103,7 @@ function App() {
 
   return (
     <div id="top" className={page === 'clients' ? 'app--clients' : ''}>
-      <div className="announcement"><span>Jaipur's trusted HVAC & MEP engineering partner</span><a href={`tel:+${phone}`}>Call +91 78520 46206 <span>↗</span></a></div>
+      <div className="announcement"><span>India's trusted HVAC & MEP engineering partner</span><a href={`tel:+${phone}`}>Call +91 78520 46206 <span>↗</span></a></div>
       <header className="site-header"><Mark /><button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">{menuOpen ? '×' : '☰'}</button><nav className={menuOpen ? 'nav nav--open' : 'nav'}>{['Home', 'About', 'Services', 'Projects', 'Clients', 'Insights', 'Contact'].map((item) => <a key={item} href={item === 'Home' ? '#top' : `#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>{item}</a>)}<a className="button button--small" href="#contact" onClick={() => setMenuOpen(false)}>Get a quote <span>↗</span></a></nav></header>
 
       <main>
@@ -142,7 +144,7 @@ function App() {
           <div className="hero__scroll">SCROLL TO EXPLORE <span>↓</span></div>
         </section>
 
-        <section className="intro section reveal"><div><p className="eyebrow">01 / WHO WE ARE</p><h2>Complete building systems,<br /><em>under one roof.</em></h2></div><div className="intro__copy"><p>Vision for MEP Solution brings together experienced engineers, trained technicians and dependable execution. From the first site survey to the final handover, we make complex HVAC and MEP work clear, coordinated and built to last.</p><div className="intro__signature"><strong>10+</strong><span>years of engineering<br />experience</span><i>— Vision MEP team</i></div><a className="text-link" href="#about">More about our approach <span>↗</span></a></div></section>
+        <section className="intro section reveal"><div><p className="eyebrow">01 / WHO WE ARE</p><h2>Complete building systems,<br /><em>under one roof.</em></h2></div><div className="intro__copy"><p>Vision for MEP Solution brings together experienced engineers, trained technicians and dependable execution. From the first site survey to the final handover, we make complex HVAC and MEP work clear, coordinated and built to last.</p><div className="intro__signature"><strong>12+</strong><span>years of engineering<br />experience</span><i>— Vision MEP team</i></div><a className="text-link" href="#about">More about our approach <span>↗</span></a></div></section>
         <section id="services" className="services section">
           <div className="section-heading reveal">
             <div>
@@ -165,7 +167,7 @@ function App() {
             ))}
           </div>
         </section>
-        <section className="stats"><div className="stats__intro">A record of<br /><em>reliability.</em></div>{[['10+', 'Years of experience'], ['100+', 'Projects completed']].map(([num, label]) => <div className="stat" key={label}><strong>{num}</strong><span>{label}</span></div>)}</section>
+        <section className="stats"><div className="stats__intro">A record of<br /><em>reliability.</em></div>{[['12+', 'Years of experience'], ['150+', 'Projects completed']].map(([num, label]) => <div className="stat" key={label}><strong>{num}</strong><span>{label}</span></div>)}</section>
 
         <section id="about" className="about section"><div className="about__image reveal"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=85" alt="Engineer reviewing an industrial installation" /><span className="image-label">VISI / 001</span></div><div className="about__content reveal"><p className="eyebrow">03 / THE VISION DIFFERENCE</p><h2>Engineering you can<br /><em>build a business on.</em></h2><p>Vision for MEP Solution was founded on a simple belief: the best engineering is felt in the everyday. A comfortable room. A safe facility. A system that quietly does its job, year after year.</p><p>Based in Jaipur, we partner with architects, contractors, businesses and homeowners to make every project more efficient, more resilient and easier to maintain.</p><a className="button button--outline" href="#contact">Meet the team <span>↗</span></a></div></section>
 
