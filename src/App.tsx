@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { icons } from 'lucide-react'
+
 
 //this is simple
 const phone = '917852046206'
