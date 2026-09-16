@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+<<<<<<< HEAD
 import { icons } from 'lucide-react'
 
+=======
+//this is simple
+>>>>>>> 764cf3a704252870008dcc6db105fbf02ff75238
 const phone = '917852046206'
 const mapEmbed = 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3557.607796458594!2d75.79169297543956!3d26.915939676645294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1788332700570!5m2!1sen!2sin'
 
